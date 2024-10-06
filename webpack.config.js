@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 
 module.exports = {
   entry: "./src/app.js",
@@ -20,6 +21,7 @@ module.exports = {
   },
   mode: "development",
   plugins: [
+    new CleanWebpackPlugin(), // plugin 인자 순서가 실행 순서와 같음
     new HtmlWebpackPlugin({
       template: "./index.html",
       filename: "index.html"
