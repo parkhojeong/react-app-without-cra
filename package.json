@@ -1,0 +1,25 @@
+{
+  "name": "react-app-without-cra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parkhojeong/react-app-without-cra.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parkhojeong/react-app-without-cra/issues"
+  },
+  "homepage": "https://github.com/parkhojeong/react-app-without-cra#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.25.7",
+    "@babel/core": "^7.25.7",
+    "@babel/preset-react": "^7.25.7"
+  }
+}
