@@ -4,16 +4,20 @@
         <title>React App Without CRA</title>
         <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
         <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/@babel/standalone@7.25.7/babel.min.js"></script>
     </head>
     <body>
         <div id="root"></div>
 
-        <script>
-            const App = () => React.createElement("h1", null, "HELLO REACT WORLD");
-            ReactDOM.render(
-              React.createElement(App),
-              document.getElementById("root")
-            );
+        <script type="text/babel">
+            // const App = () => React.createElement("h1", null, "HELLO REACT WORLD");
+            // ReactDOM.render(
+            //   React.createElement(App),
+            //   document.getElementById("root")
+            // );
+
+            const App = () => <h1>HELLO REACT WORLD WITH JSX</h1>
+            ReactDOM.render(<App />, document.getElementById("root"));
         </script>
     </body>
 </html>
